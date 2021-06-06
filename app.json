@@ -12,23 +12,23 @@
   "env": {
     "APP_ID": {
       "description": "ID of your Facebook App. See: https://developers.facebook.com/docs/development/create-an-app/app-dashboard#app-id",
-      "value": ""
+      "value": "850614842197228"
     },
     "APP_SECRET": {
       "description": "The Secret of your Facebook App. Your App secret can be found in App Dashboard -> Settings -> Basic",
-      "value": ""
+      "value": "81872957f6f618a1073835b1e13604e9"
     },
     "PAGE_ID": {
       "description": "ID of your Facebook Page which is connected to Instagram",
-      "value": ""
+      "value": "105028971808115"
     },
     "PAGE_ACCESS_TOKEN": {
       "description": "Page Access Token. See: https://developers.facebook.com/docs/pages/access-tokens/#get-a-page-access-token",
-      "value": ""
+      "value": "EAAMFoTOChOwBAALgD7GMLDo73lMxwBFCZCFlDGuKbxx0o6d0QTcAp0dhOr6wHytb0fjyHldl7bK39DM0meVOAJAIVr9y7i1mfXJyV4Q2vIZAO6C2y54dhQgOp93AICz6sAo2I8tdTrDjZBvFOoYWwjEpZAu7tdJQQ1qKWXHWKi6XZCyEC8DdqrddMrDkNTJldnL6ZBhLoZALhbpZA8H3buEq"
     },
     "VERIFY_TOKEN": {
       "description": "An arbitrary string that is used for the webhook verification request. See: https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup/",
-      "value": ""
+      "value": "verify_token_105028971808115"
     },
     "LOCALE": {
       "description": "Optional code for experience locale, e.g. `en_US`. Must match a file in locales folder.",
