@@ -174,11 +174,11 @@ function verifyRequestSignature(req, res, buf) {
       .update(buf)
       .digest("hex");
 
-    // if (signatureHash != expectedHash) {
-    //   throw new Error(
-    //     "Couldn't validate the request signature. Confirm your App Secret."
-    //   );
-    // }
+    if (signatureHash != expectedHash) {
+      throw new Error(
+        "Couldn't validate the request signature. Confirm your App Secret."
+      );
+    }
   }
 }
 
