@@ -174,6 +174,11 @@ function verifyRequestSignature(req, res, buf) {
       .update(buf)
       .digest("hex");
 
+    console.log('[SIGNATURE HASH]', signatureHash);
+    console.log('[EXPECTED_HASH]', expectedHash);
+    console.log('[CONFIG.APP_SECRET]', config.appSecret);
+    console.log('[BUF]', buf);
+
     if (signatureHash != expectedHash) {
       throw new Error(
         "Couldn't validate the request signature. Confirm your App Secret."
