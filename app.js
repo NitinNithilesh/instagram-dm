@@ -31,7 +31,7 @@ app.use(
 );
 
 // Parse application/json. Verify that callback came from Facebook
-app.use(json({ verify: verifyRequestSignature }));
+// app.use(json({ verify: verifyRequestSignature }));
 
 // Serving static files in Express
 app.use(express.static(path.join(path.resolve(), "public")));
