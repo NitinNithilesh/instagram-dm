@@ -163,7 +163,7 @@ app.post("/webhook", (req, res) => {
 // Verify that the callback came from Facebook.
 function verifyRequestSignature(req, res, buf) {
   var signature = req.headers["x-hub-signature"];
-  console.log('SIGNATURE', signature);
+
   if (!signature) {
     console.warn(`Couldn't find "x-hub-signature" in headers.`);
   } else {
@@ -173,8 +173,7 @@ function verifyRequestSignature(req, res, buf) {
       .createHmac("sha1", config.appSecret)
       .update(buf)
       .digest("hex");
-    console.log('SIGNATURe HASH : ', signatureHash);
-    console.log('EXPECTED HASH : ',expectedHash);
+
     // if (signatureHash != expectedHash) {
     //   throw new Error(
     //     "Couldn't validate the request signature. Confirm your App Secret."
