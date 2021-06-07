@@ -118,7 +118,7 @@ module.exports = class GraphAPi {
       uri: `${config.mPlatfom}/${config.pageId}/subscribed_apps`,
       qs: {
         access_token: config.pageAccesToken,
-        subscribed_fields: "feed"
+        subscribed_fields: "feed, mention, name, picture, category, description, conversations, branded_camera, feature_access_list, inbox_labels, standby, message_mention, messages, message_reactions, messaging_account_linking, messaging_checkout_updates, message_echoes, message_deliveries, messaging_game_plays, messaging_optins, messaging_optouts, messaging_payments, messaging_postbacks, messaging_pre_checkouts, message_reads, messaging_referrals, messaging_handovers, messaging_policy_enforcement, messaging_page_feedback, messaging_appointments, messaging_direct_sends, messaging_fblogin_account_linking, user_action, messaging_feedback"
       },
       method: "POST"
     })
