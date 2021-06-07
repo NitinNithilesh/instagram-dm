@@ -180,11 +180,11 @@ function verifyRequestSignature(req, res, buf) {
     // console.log('[CONFIG.APP_SECRET]', config.appSecret);
     // console.log('[BUF]', buf);
 
-    // if (signatureHash != expectedHash) {
-    //   throw new Error(
-    //     "Couldn't validate the request signature. Confirm your App Secret."
-    //   );
-    // }
+    if (signatureHash != expectedHash) {
+      throw new Error(
+        "Couldn't validate the request signature. Confirm your App Secret."
+      );
+    }
   }
 }
 
