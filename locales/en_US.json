@@ -59,5 +59,6 @@
 	"fallback": {
 		"any": "Sorry, but I don’t recognize \"{{message}}\".",
 		"attachment": "Thanks for sending this attachment, we can connect you to an agent to review it or we can start over"
-	}
+	},
+	"work": "work"
 }
